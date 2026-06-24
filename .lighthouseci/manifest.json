@@ -1,0 +1,14 @@
+[
+  {
+    "url": "http://localhost:4321/zip-viewer/",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/dai/Documents/cloudflare/runlocally/tools/zip-viewer/.lighthouseci/localhost-_zip_viewer_-2026_06_24_00_14_23.report.html",
+    "jsonPath": "/Users/dai/Documents/cloudflare/runlocally/tools/zip-viewer/.lighthouseci/localhost-_zip_viewer_-2026_06_24_00_14_23.report.json",
+    "summary": {
+      "performance": 1,
+      "accessibility": 0.98,
+      "best-practices": 1,
+      "seo": 1
+    }
+  }
+]

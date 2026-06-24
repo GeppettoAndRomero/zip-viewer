@@ -1,0 +1,36 @@
+{
+  "name": "ZIP Viewer \u2014 runlocally",
+  "short_name": "ZIP Viewer",
+  "description": "See what's inside a .zip without extracting it, in your browser. Nothing is uploaded. Works offline.",
+  "start_url": "/zip-viewer/",
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone"
+  ],
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1",
+  "scope": "/zip-viewer/",
+  "icons": [
+    {
+      "src": "/zip-viewer/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/zip-viewer/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "utilities",
+    "productivity"
+  ],
+  "prefer_related_applications": false,
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  }
+}
