@@ -152,9 +152,9 @@ export function ConversionManager({ locale = 'en' }: ConversionManagerProps) {
               {entries.map((e, i) => (
                 <div
                   key={i}
-                  style="display: flex; justify-content: space-between; gap: var(--space-3); padding: var(--space-2) var(--space-3); background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-xs); font-size: var(--fs-2);"
+                  style="display: flex; justify-content: space-between; align-items: flex-start; gap: var(--space-3); padding: var(--space-2) var(--space-3); background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-xs); font-size: var(--fs-2);"
                 >
-                  <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                  <span title={e.name} style="flex: 1; min-width: 0; overflow-wrap: anywhere; word-break: break-word;">
                     {e.directory ? '📁 ' : ''}{e.encrypted ? '🔒 ' : ''}
                     {!e.utf8 && /[\u0080-\uffff]/.test(e.name) ? '⚠ ' : ''}
                     {e.name}
