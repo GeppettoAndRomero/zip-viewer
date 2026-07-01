@@ -148,6 +148,12 @@ export function ConversionManager({ locale = 'en' }: ConversionManagerProps) {
               </p>
             )}
 
+            <div style="margin-bottom: var(--space-3); display: flex; justify-content: flex-end;">
+              <AppButton variant="secondary" onClick={() => { setEntries(null); setName(null); }}>
+                {t.clearAll}
+              </AppButton>
+            </div>
+
             <div data-testid="entry-table" style="display: flex; flex-direction: column; gap: 2px;">
               {entries.map((e, i) => (
                 <div
@@ -164,12 +170,6 @@ export function ConversionManager({ locale = 'en' }: ConversionManagerProps) {
                   </span>
                 </div>
               ))}
-            </div>
-
-            <div style="margin-top: var(--space-4); display: flex; justify-content: flex-end;">
-              <AppButton variant="secondary" onClick={() => { setEntries(null); setName(null); }}>
-                {t.clearAll}
-              </AppButton>
             </div>
           </div>
         )}
